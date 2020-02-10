@@ -12,7 +12,7 @@ Article link -  "insert here  ;)"
 2. Install dependencies (2-5 min, one time setup) :: `npm install`
 
 ## Execute Test
-Execute - `npm test`
+Execute - `npm test` 
 
 ## CI-CD
 -  CircleCI - https://circleci.com/gh/rajeevbarde/tw_nightwatch
