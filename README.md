@@ -5,7 +5,6 @@ Article link -  "insert here  ;)"
 ## Content
 - [Installation](#installation)
 - [Execute Test](#Execute_Test)
-- [Result](#result)
 - [CI-CD](#CI-CD)
  
  ## Installation (On Windows Machine)
