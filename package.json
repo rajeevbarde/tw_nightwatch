@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node nightwatch.js Scenarios\\completed_task.js"
+    "test": "node nightwatch.js Scenarios/completed_task.js"
   },
   "keywords": [],
   "author": "",
