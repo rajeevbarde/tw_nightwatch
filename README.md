@@ -7,7 +7,7 @@ Article link -  "insert here  ;)"
 - [Execute Test](#Execute_Test)
 - [CI-CD](#CI-CD)
  
- ## Installation (On Windows Machine)
+ ## Installation
 1. Clone the repository
 2. Install dependencies (2-5 min, one time setup) :: `npm install`
 
