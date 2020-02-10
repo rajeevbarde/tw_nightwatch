@@ -1,0 +1,30 @@
+version: 2
+jobs:
+  build:
+    docker:
+    - image: circleci/node:10.12.0-browsers
+    working_directory: ~/nw-ci-medium
+    steps:
+    - checkout
+    - run:
+        name: Install Chrome
+        command: |
+          wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+          sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+          sudo apt-get update
+          sudo apt-get -y install google-chrome-stable
+    - run:
+        name: Installing nightwatch & Web drivers
+        command: ls && npm install
+    - run:
+        name: Run integration test
+        command: npm test
+    - store_artifacts:
+        path: Result
+    - store_test_results:
+        path: Result
+workflows:
+  version: 2
+  workflow:
+    jobs:
+    - build
